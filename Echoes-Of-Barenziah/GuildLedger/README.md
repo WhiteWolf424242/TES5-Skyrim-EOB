@@ -34,3 +34,4 @@ Add EOBGuildLedgerManagerQuest as a property to your script. Cast it as EOBGuild
 
 # Requirements:
 These scripts require SKSE. If you're getting strange compilation errors, it means your SKSE source installation may not be correct. Check out the pinned info about this on the discord or contact me for help.
+  
