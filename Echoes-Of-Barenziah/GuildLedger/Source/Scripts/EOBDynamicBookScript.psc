@@ -12,7 +12,7 @@ Event OnRead()
 	; Failsafes
 	If(DummyObject.GetBaseObject().GetName() != akString || DynamicBook.GetReference() != self)
 		UpdateBookTextMenuMode()
-    Endif
+	Endif
 EndEvent
 
 function UpdateBookTextMenuMode()
@@ -27,7 +27,7 @@ endfunction
 
 function UpdateBookText()
 	If(DynamicBook.GetReference() != self)
-        DynamicBook.ForceRefTo(Self) ;force the book alias to this book objectreference so it can display the akString
+		DynamicBook.ForceRefTo(Self) ;force the book alias to this book objectreference so it can display the akString
 	endif
 	DummyObject.GetBaseObject().SetName(akString)
 endfunction
