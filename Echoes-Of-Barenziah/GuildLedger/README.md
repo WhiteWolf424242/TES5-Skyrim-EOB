@@ -10,22 +10,29 @@ Make sure that the LedgerBookReference is correctly set to this reference on the
 Do not touch the EOBLedgerDummyObject unless you know what you are doing.
 
 # Functions on EOBGuildLedgerManagerScript
-
-function AppendBook(String itemName, String worth, Actor thief = NONE, String date = "DefaultTime")<br/>
+```
+function AppendBook(String itemName, String worth, Actor thief = NONE, String date = "DefaultTime")
+```
 Appends a formatted string to the end of the book.<br/>
 String itemName: The name of the item to be added to the new record.<br/>
 String worth: the worth of the item. Will be displayed as: "Estimated worth: <worth>"<br/>
 Actor thief: the Actor who's name gets credited. Not specifying will use the Player's name.<br/>
 String date: The date of the record. Not specifying will get the current game time.<br/>
-
-function AppendBookCustomString(String akString)<br/>
+  
+```
+function AppendBookCustomString(String akString)
+ ```
 Appends a custom string to the end of the book.<br/>
 String akString: the string to append.<br/>
 
-function ResetBook()<br/>
+```
+function ResetBook()
+```
 Resets the book text to be "".
 
-String function GetBookString()<br/>
+```
+String function GetBookString()
+```
 Shortcut to get the string that's currently stored by the book.
 
 
