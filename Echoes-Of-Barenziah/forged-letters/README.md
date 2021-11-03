@@ -25,12 +25,12 @@ To Volf from Ulain: index=1, senderID=0<br/>
 To Olred from Ulain: index=1, senderID=1<br/>
 <br/>
 
-At the steps of dictating the letter, you can call each step that appends the next paragraph in the specified tone, for the specified letter. For example, to append the first, starting paragraph to the first letter (i=0, so called L0):
+At the steps of dictating the letter, you can call each step that appends the next paragraph in the specified tone, for the specified letter. For example, to append the first paragraph (called "Starts X" in the doc) to the first letter (i=0, so called L0):
 ```
 (EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateStartingForL0(String tone)
 ```
 The tone parameter chooses what paragraph to add, its values are the keywords in the google doc, see full list below.<br/>
-There are 2 default constructed parameters as well: index and paragraph, both integers, you don't have to set these unless you want to do some crazy mixing of the paragraphs. Leave them to default.<br/>
+There are 2 default constructed parameters as well: 'index' and 'paragraph', both integers, you don't have to set these unless you want to do some crazy mixing of the paragraphs. Best leave them to default.<br/>
 <br/>
 The full list of paragraphs to add, and the values the tone parameter takes:
 ```
