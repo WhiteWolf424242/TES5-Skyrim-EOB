@@ -17,12 +17,12 @@ Then you can do:<br/>
 ```
 (EOBLetterForgingQuest as EOBLetterForgingQuestScript).InitForgedLetter(int index, int senderID)
 ```
-The first parameter, index, is the number of the letter, counted as on the google doc: Letter#1, and Letter#2 correspond to i=0 and i =1. <br/>
-The senderID corresponds to the "Letter To/From:" block in the doc. senderID=0 is the left block, senderID=1 is the right block. Also summarized:<br/>
-To Volf from Olred: i=0, senderID=0<br/>
-To Ulain from Olred: i=0, senderID=1<br/>
-To Volf from Ulain: i=1, senderID=0<br/>
-To Olred from Ulain: i=1, senderID=1<br/>
+The first parameter, index, is the number of the letter, counted as on the google doc: Letter#1, and Letter#2 correspond to index=0 and index =1. <br/>
+The senderID corresponds to the "Letter To/From:" coloums in the doc. So senderID=0 is the left coloumn, senderID=1 is the right coloumn. Summarized table:<br/>
+To Volf from Olred: index=0, senderID=0<br/>
+To Ulain from Olred: index=0, senderID=1<br/>
+To Volf from Ulain: index=1, senderID=0<br/>
+To Olred from Ulain: index=1, senderID=1<br/>
 <br/>
 
 At the steps of dictating the letter, you can call each step that appends the next paragraph in the specified tone, for the specified letter. For example, to append the first, starting paragraph to the first letter (i=0, so called L0):
