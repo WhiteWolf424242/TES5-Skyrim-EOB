@@ -34,12 +34,12 @@ There are 2 default constructed parameters as well: 'index' and 'paragraph', bot
 <br/>
 The full list of paragraphs to add, and the values the tone parameter takes:
 ```
-(EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateStartingForL0(String tone)     ; starting paragraph for Letter0, tone: kind, rude, vague 
-(EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateStartingForL1(String tone)     ; starting paragraph for Letter1,tone: kind, rude, vague 
-(EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateParagraph1ForL0(String tone)   ; middle paragraph for Letter0, tone: love, breakup, child, death
-(EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateParagraph1ForL1(String tone)   ; middle paragraph for Letter1,tone: love, breakup, child, death
-(EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateEndingForL0(String tone)       ; end paragraph for Letter0, tone: cruel, kind, loving
-(EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateEndingForL1(String tone)       ; end paragraph for Letter1, tone: cruel, kind, loving
+GenerateStartingForL0(String tone)     ; starting paragraph for Letter0, tone: kind, rude, vague 
+GenerateStartingForL1(String tone)     ; starting paragraph for Letter1,tone: kind, rude, vague 
+GenerateParagraph1ForL0(String tone)   ; middle paragraph for Letter0, tone: love, breakup, child, death
+GenerateParagraph1ForL1(String tone)   ; middle paragraph for Letter1,tone: love, breakup, child, death
+GenerateEndingForL0(String tone)       ; end paragraph for Letter0, tone: cruel, kind, loving
+GenerateEndingForL1(String tone)       ; end paragraph for Letter1, tone: cruel, kind, loving
 ```
 
 To add the letter to the player:
