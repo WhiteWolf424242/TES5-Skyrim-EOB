@@ -59,8 +59,14 @@ For this of course you add the EOBLetterForgingQuest as a Property to the dialog
 ```
 ; first dialogue fragment:
 (EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateStartingForL0("rude")
+```
+
+```
 ; second dialogue fragment:   
 (EOBLetterForgingQuest as EOBLetterForgingQuestScript).GenerateParagraph1ForL0("breakup") 
+```
+
+```
 ; third and final dialogue fragment:
 EOBLetterForgingQuestScript forge = EOBLetterForgingQuest as EOBLetterForgingQuestScript
 forge.GenerateEndingForL0("cruel")  
